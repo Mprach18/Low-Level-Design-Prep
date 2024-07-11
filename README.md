@@ -38,16 +38,20 @@ class Product:
             
          
             
-'''This class violates the single responsibility principle as it handles multiple functionalities:
+'''
+This class violates the single responsibility principle as it handles multiple functionalities:
 - storing product information
 - storing the product stock and handles management
 - performing order processing
 In the future, whenever there are any changes for any of these functionalities, it would require us
-to modify this class, leading to new bugs unknowingly.'''
+to modify this class, leading to new bugs unknowingly.
+'''
 
 
 
-'''To adhere to SRP, we can split this class into separate classes'''
+'''
+To adhere to SRP, we can split this class into separate classes
+'''
 
 class SRP_product:
     def __init__(self, id, name, price):
